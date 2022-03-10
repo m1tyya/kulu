@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		scrollbar-width: none;
+	}
+	
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	
 	body {
 		@apply bg-[#0b1e29] text-gray-300;
+		
 	}
 }
